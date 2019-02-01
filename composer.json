@@ -1,0 +1,37 @@
+{
+    "name": "cruxinator/oqgraphlaravel",
+    "type": "library",
+    "require": {
+        "illuminate/database": "5.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.*",
+        "ext-pdo": "*"
+    },
+    "authors": [
+        {
+            "name": "Chris Harris",
+            "email": "c.harris@communicationinnovations.com.au"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Cruxinator\\OQGraphLaravel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cruxinator\\OQGraphLaravel\\Tests\\": "tests/"
+        }
+    },
+
+   "extra":{
+      "laravel":{
+         "providers":[
+            "Cruxinator\\OQGraphLaravel\\Providers\\OQGraphServiceProvider"
+         ]
+      }
+   },
+   "minimum-stability": "dev",
+   "prefer-stable": true
+}
